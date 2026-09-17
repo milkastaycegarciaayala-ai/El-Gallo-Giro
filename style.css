@@ -1,0 +1,328 @@
+/* ==============================
+   EL GALLO GIRO
+   ESTILOS GENERALES
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   ENCABEZADO
+   ============================== */
+
+header {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 5px solid #f5c400;
+}
+
+.logo h2 {
+    color: #f5c400;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+
+/* ==============================
+   MENÚ DE NAVEGACIÓN
+   ============================== */
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5c400;
+}
+
+
+/* ==============================
+   SECCIÓN PRINCIPAL
+   ============================== */
+
+main {
+    width: 100%;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+#inicio {
+    min-height: 80vh;
+    background-color: #c90000;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+#inicio h1 {
+    font-size: 60px;
+    color: #f5c400;
+    font-weight: 900;
+    text-shadow: 3px 3px 0 #111111;
+}
+
+#inicio p {
+    font-size: 24px;
+    margin: 15px 0 30px;
+}
+
+
+/* ==============================
+   BOTONES
+   ============================== */
+
+#inicio a,
+#contacto a {
+    display: inline-block;
+    background-color: #f5c400;
+    color: #111111;
+
+    padding: 14px 25px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#inicio a:hover,
+#contacto a:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+/* ==============================
+   TÍTULOS
+   ============================== */
+
+section h2 {
+    font-size: 38px;
+    color: #c90000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section h3 {
+    color: #c90000;
+    margin-bottom: 10px;
+}
+
+
+/* ==============================
+   MENÚ
+   ============================== */
+
+#menu {
+    background-color: #ffffff;
+}
+
+#menu h3 {
+    font-size: 25px;
+    color: #111111;
+    border-left: 8px solid #c90000;
+    padding-left: 12px;
+    margin-top: 25px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 15px 0 30px;
+}
+
+#menu li {
+    background-color: #f5c400;
+    margin: 8px 0;
+    padding: 12px 18px;
+
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#menu li:hover {
+    background-color: #c90000;
+    color: #ffffff;
+}
+
+
+/* ==============================
+   NUEVOS PRODUCTOS
+   ============================== */
+
+#nuevos {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+#nuevos h2 {
+    color: #f5c400;
+}
+
+#nuevos article {
+    background-color: #ffffff;
+    color: #111111;
+
+    padding: 25px;
+    margin: 20px auto;
+
+    max-width: 700px;
+
+    border-left: 8px solid #c90000;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#nuevos article h3 {
+    color: #c90000;
+    font-size: 25px;
+}
+
+
+/* ==============================
+   PROMOCIÓN
+   ============================== */
+
+#promocion {
+    background-color: #f5c400;
+    color: #111111;
+    text-align: center;
+}
+
+#promocion h2 {
+    color: #c90000;
+}
+
+#promocion p {
+    font-size: 24px;
+    font-weight: bold;
+
+    background-color: #ffffff;
+
+    padding: 25px;
+    border-radius: 10px;
+
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* ==============================
+   CONTACTO
+   ============================== */
+
+#contacto {
+    background-color: #c90000;
+    color: #ffffff;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #f5c400;
+}
+
+#contacto p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#contacto a {
+    margin: 8px;
+}
+
+
+/* ==============================
+   PIE DE PÁGINA
+   ============================== */
+
+footer {
+    background-color: #111111;
+    color: #ffffff;
+
+    text-align: center;
+    padding: 25px;
+
+    border-top: 5px solid #f5c400;
+}
+
+
+/* ==============================
+   CELULARES
+   ============================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #inicio h1 {
+        font-size: 42px;
+    }
+
+    #inicio p {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    #promocion p {
+        font-size: 19px;
+    }
+}
